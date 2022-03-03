@@ -52,11 +52,11 @@ teammate_3 = ['11:00', '11:30', '12:00', '14:00', '14:30', '16:30', '17:00']
 # Available Times: '12:00' and '14:30'
 
 
-def available(set_a,set_b,set_c, set_d):
-    billy_set = set(set_a)
-    teammate_1_set = set(set_b)
-    teammate_2_set = set(set_c)
-    teammate_3_set = set(set_d)
+def available(a,b,c,d):
+    billy_set = set(a)
+    teammate_1_set = set(b)
+    teammate_2_set = set(c)
+    teammate_3_set = set(d)
     available_times = billy_set & teammate_1_set & teammate_2_set & teammate_3_set
     return(available_times)
 print(available(billy_times, teammate_1,teammate_2,teammate_3))
